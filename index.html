@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Cormorant:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .font-cormorant {
+            font-family: 'Cormorant', serif;
+        }
+
+        .font-montserrat {
+            font-family: 'Montserrat', serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero -->
+    <section class="relative w-full h-screen p-10 flex flex-col">
+        <!-- Navbar -->
+        <nav class="flex items-center justify-between w-full">
+            <div class="flex items-center space-x-2">
+                <img src="/img/logo.png" alt="Avatar" class="w-10 h-10">
+            </div>
+            <div class="space-x-6">
+                <a href="#works" class="text-gray-800 font-medium hover:text-black transition-colors duration-300">
+                    My Works
+                </a>
+                <a href="#cv"
+                    class="px-4 py-2 bg-black text-white rounded-lg shadow focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 transition ease-in-out duration-150">
+                    CV
+                </a>
+            </div>
+        </nav>
+
+        <!-- Border Corner Decorations -->
+        <div class="absolute top-0 left-0 w-38 h-38 border-t-8 border-l-8 border-black"
+            style="clip-path: polygon(0 0, 100% 0, 0 100%);"></div>
+        <div class="absolute bottom-0 right-0 w-38 h-38 border-b-8 border-r-8 border-black"
+            style="clip-path: polygon(100% 100%, 0 100%, 100% 0);"></div>
+
+        <!-- Hero Content -->
+        <div class="flex-grow flex flex-col justify-center items-center text-center">
+            <h1 class="text-4xl md:text-6xl text-gray-black font-cormorant font-bold">
+                Ikhsan Permana Hadiansyah
+            </h1>
+            <p class="mt-6 text-base text-gray-800 md:text-lg">
+                I code beautiful simple things, and I love what I do
+            </p>
+            <div class="mt-10">
+                <img src="/img/logo.png" alt="Avatar" class="w-32 h-32 md:w-40 md:h-40">
+            </div>
+        </div>
+    </section>
+
+    <!-- My Works -->
+    <section id="works"
+        class="relative w-full min-h-screen flex flex-col items-center justify-center bg-white font-cormorant">
+
+        <!-- Frame Atas -->
+        <img src="/img/frame-1.png" alt="Frame Top" class="w-auto h-auto object-contain">
+
+        <!-- Konten My Works -->
+        <div class="relative w-full max-w-6xl px-6 py-16 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-10">My Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-4 border rounded-lg shadow-lg transition transform duration-500 hover:scale-105">
+                    <div class="overflow-hidden rounded">
+                        <img src="/img/project-1.png" alt="Project 1" class="w-full h-auto object-cover rounded">
+                    </div>
+                    <h3 class="mt-4 text-2xl font-semibold">For You</h3>
+                    <p class="mt-2 text-lg text-gray-800">
+                        A simple birthday greeting website built with HTML, Tailwind, and JavaScript.
+                    </p>
+                    <div class="mt-4">
+                        <a href="https://ican302.github.io/for-you/" target="_blank"
+                            class="inline-block px-4 py-2 bg-black text-white text-sm font-montserrat rounded-lg shadow focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 transition ease-in-out duration-150">
+                            Live View
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="p-6 border rounded-lg shadow-lg transition transform transition duration-500 hover:scale-105">
+                    <div class="overflow-hidden rounded">
+                        <img src="/img/project-2.png" alt="Project 2" class="w-full h-auto object-cover rounded">
+                    </div>
+                    <h3 class="mt-4 text-2xl font-semibold">WeInvite</h3>
+                    <p class="mt-2 text-lg text-gray-800">
+                        A digital wedding invitation website built with Laravel, Tailwind, JavaScript, and MySQL for
+                        database management
+                    </p>
+                    <div class="mt-4">
+                        <a href="https://weinvite.my.id/" target="_blank"
+                            class="inline-block px-4 py-2 bg-black text-white text-sm font-montserrat rounded-lg shadow focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 transition ease-in-out duration-150">
+                            Live View
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="p-6 border rounded-lg shadow-lg transition transform transition duration-500 hover:scale-105">
+                    <div class="overflow-hidden rounded">
+                        <img src="/img/project-3.png" alt="Project 3" class="w-full h-auto object-cover rounded">
+                    </div>
+                    <h3 class="mt-4 text-2xl font-semibold">SARPRAS</h3>
+                    <p class="mt-2 text-lg text-gray-800">
+                        My thesis project, SARPRAS, is a web application designed to manage school facilities and
+                        infrastructure.
+                        It was developed using Laravel, Tailwind, JavaScript, and MySQL for database management.
+                    </p>
+                    <div class="mt-4">
+                        <a href="https://github.com/ican302/sarpras" target="_blank"
+                            class="inline-block px-4 py-2 bg-black text-white text-sm font-montserrat rounded-lg shadow focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 transition ease-in-out duration-150">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Frame Bawah -->
+        <img src="/img/frame-2.png" alt="Frame Bottom" class="w-full object-contain">
+    </section>
+
+
+</body>
+
+</html>
