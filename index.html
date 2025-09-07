@@ -17,6 +17,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -60,13 +63,15 @@
 
         <!-- Hero Content -->
         <div class="flex-grow flex flex-col justify-center items-center text-center">
-            <h1 class="text-4xl md:text-6xl text-gray-black font-cormorant font-bold">
+            <h1 class="text-4xl md:text-6xl text-gray-black font-cormorant font-bold" data-aos="fade-right"
+                data-aos-easing="ease-in-sine" data-aos-duration="800">
                 Ikhsan Permana Hadiansyah
             </h1>
-            <p class="mt-6 text-base text-gray-800 md:text-lg">
+            <p class="mt-6 text-base text-gray-800 md:text-lg" data-aos="fade-left" data-aos-easing="ease-in-sine"
+                data-aos-duration="800">
                 I code beautiful simple things, and I love what I do
             </p>
-            <div class="mt-10">
+            <div class="mt-10" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800">
                 <img src="/img/logo.png" alt="Avatar" class="w-32 h-32 md:w-40 md:h-40">
             </div>
         </div>
@@ -140,6 +145,10 @@
         <img src="/img/frame-2.png" alt="Frame Bottom" class="w-full object-contain">
     </section>
 
+    <script>
+        // Inisialisasi AOS
+        AOS.init();
+    </script>
 
 </body>
 
