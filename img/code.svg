@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="32" fill="#6594B1"></rect>
+  
+  <!-- left bracket -->
+  <path d="M80 60 L40 100 L80 140" stroke="white" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+  
+  <!-- right bracket -->
+  <path d="M120 60 L160 100 L120 140" stroke="white" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+  
+  <!-- slash -->
+  <path d="M105 55 L95 145" stroke="white" stroke-width="10" stroke-linecap="round"></path>
+</svg>
