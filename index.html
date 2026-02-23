@@ -104,6 +104,10 @@
             transform: scale(1);
             opacity: 1;
         }
+
+        .no-tap {
+            -webkit-tap-highlight-color: transparent;
+        }
     </style>
 
 
@@ -135,54 +139,59 @@
     </nav>
 
     <!-- HERO -->
-    <section class="min-h-screen flex items-center pt-28">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+    <section class="min-h-screen flex items-center pt-24 sm:pt-28">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
 
-            <div data-aos="fade-right">
-                <h1 class="text-5xl md:text-6xl font-cormorant font-bold leading-tight tracking-tight">
+            <!-- TEXT -->
+            <div data-aos="fade-right" class="flex flex-col">
+
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-cormorant font-bold leading-tight tracking-tight">
                     Ikhsan Permana <br>
                     <span class="accent">Hadiansyah</span>
                 </h1>
 
-                <p class="mt-8 text-lg text-gray-500 max-w-xl">
+                <p class="mt-5 text-base sm:text-lg text-gray-500 max-w-xl">
                     I code beautiful simple things, and I love what I do.
                 </p>
 
-                <div class="mt-10 flex gap-4">
+                <!-- BUTTON -->
+                <div class="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 order-2">
                     <a href="#projects"
-                        class="px-8 py-3 bg-accent text-white rounded-2xl font-semibold shadow-xl hover:scale-105 transition">
+                        class="px-6 py-3 bg-accent text-white rounded-xl font-semibold text-center text-nowrap shadow-xl hover:scale-105 transition">
                         View Projects
                     </a>
                     <a href="cv/CV.pdf" download
-                        class="px-8 py-3 text-[#6594B1] border border-accent rounded-2xl hover-bg-accent hover:text-white transition">
+                        class="no-tap px-6 py-3 text-[#6594B1] border border-accent rounded-xl text-center text-nowrap hover:bg-accent hover:text-white transition">
                         Download CV
                     </a>
                 </div>
 
-                <div class="flex flex-wrap gap-3 mt-10 text-xs">
-                    <span
-                        class="flex-1 min-w-[calc(25%-0.75rem)] px-4 py-1 bg-white/80 backdrop-blur shadow rounded-full">Laravel</span>
-                    <span
-                        class="flex-1 min-w-[calc(25%-0.75rem)] px-4 py-1 bg-white/80 backdrop-blur shadow rounded-full">JavaScript</span>
-                    <span
-                        class="flex-1 min-w-[calc(25%-0.75rem)] px-4 py-1 bg-white/80 backdrop-blur shadow rounded-full">Tailwind</span>
-                    <span
-                        class="flex-1 min-w-[calc(25%-0.75rem)] px-4 py-1 bg-white/80 backdrop-blur shadow rounded-full">Bootstrap</span>
+                <!-- IMAGE MOBILE (hidden desktop) -->
+                <div class="flex justify-center my-6 md:hidden order-1" data-aos="fade-up">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-accent blur-[80px] opacity-30"></div>
+                        <img src="img/code.svg" class="relative w-40 sm:w-48">
+                    </div>
+                </div>
 
-                    <span
-                        class="flex-1 min-w-[calc(33.333%-0.75rem)] px-4 py-1 bg-white/80 backdrop-blur shadow rounded-full">React</span>
-                    <span
-                        class="flex-1 min-w-[calc(33.333%-0.75rem)] px-4 py-1 bg-white/80 backdrop-blur shadow rounded-full">MySQL</span>
-                    <span
-                        class="flex-1 min-w-[calc(33.333%-0.75rem)] px-4 py-1 bg-white/80 backdrop-blur shadow rounded-full">PostgreSQL</span>
+                <!-- SKILLS -->
+                <div class="flex flex-wrap gap-2 mt-4 text-xs order-3">
+                    <span class="px-3 py-1 bg-white/80 backdrop-blur shadow rounded-full">Laravel</span>
+                    <span class="px-3 py-1 bg-white/80 backdrop-blur shadow rounded-full">JavaScript</span>
+                    <span class="px-3 py-1 bg-white/80 backdrop-blur shadow rounded-full">Tailwind</span>
+                    <span class="px-3 py-1 bg-white/80 backdrop-blur shadow rounded-full">Bootstrap</span>
+                    <span class="px-3 py-1 bg-white/80 backdrop-blur shadow rounded-full">React</span>
+                    <span class="px-3 py-1 bg-white/80 backdrop-blur shadow rounded-full">MySQL</span>
+                    <span class="px-3 py-1 bg-white/80 backdrop-blur shadow rounded-full">PostgreSQL</span>
                 </div>
 
             </div>
 
-            <div class="flex justify-center md:justify-end" data-aos="fade-left">
+            <!-- IMAGE DESKTOP ONLY -->
+            <div class="hidden md:flex justify-center md:justify-end" data-aos="fade-left">
                 <div class="relative">
-                    <div class="absolute inset-0 bg-accent blur-[120px] opacity-30"></div>
-                    <img src="img/code.svg" class="relative w-60 h-60">
+                    <div class="absolute inset-0 bg-accent blur-[100px] opacity-30"></div>
+                    <img src="img/code.svg" class="relative w-56 md:w-64">
                 </div>
             </div>
 
@@ -197,7 +206,7 @@
                 My Projects
             </h2>
 
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
                 <div class="glass project-card relative rounded-3xl p-6 overflow-hidden" data-aos="zoom-in">
                     <div class="project-glow"></div>
@@ -208,7 +217,7 @@
                         Birthday greeting website built with HTML, Tailwind, and JavaScript
                     </p>
 
-                    <div class="mt-5 flex gap-2">
+                    <div class="mt-5 flex flex-wrap gap-2">
                         <a href="https://ican302.github.io/for-you/" target="_blank"
                             class="px-5 py-2 bg-accent text-white rounded-xl text-sm shadow hover:scale-105 transition">
                             Live
@@ -243,7 +252,7 @@
                         Wedding invitation website built with Laravel and MySQL
                     </p>
 
-                    <div class="mt-5 flex gap-2">
+                    <div class="mt-5 flex flex-wrap gap-2">
                         <a href="https://weinvite.my.id/" target="_blank"
                             class="px-5 py-2 bg-accent text-white rounded-xl text-sm shadow hover:scale-105 transition">
                             Live
@@ -278,7 +287,7 @@
                         School facilities management website built with Laravel and MySQL
                     </p>
 
-                    <div class="mt-5 flex gap-2">
+                    <div class="mt-5 flex flex-wrap gap-2">
                         <button onclick="openModal('sarpras')"
                             class="px-5 py-2 border border-accent rounded-xl text-sm hover-bg-accent hover:text-white transition">
                             Screenshots
@@ -309,7 +318,7 @@
                         To-Do list website built with Laravel, React and SQLite
                     </p>
 
-                    <div class="mt-5 flex gap-2">
+                    <div class="mt-5 flex flex-wrap gap-2">
                         <button onclick="openModal('todo')"
                             class="px-5 py-2 border border-accent rounded-xl text-sm hover-bg-accent hover:text-white transition">
                             Screenshots
@@ -340,7 +349,7 @@
                         CCBS Koperasi website built with Laravel, JavaScript and PostgreSQL
                     </p>
 
-                    <div class="mt-5 flex gap-2">
+                    <div class="mt-5 flex flex-wrap gap-2">
                         <button onclick="openModal('ccbs')"
                             class="px-5 py-2 border border-accent rounded-xl text-sm hover-bg-accent hover:text-white transition">
                             Screenshots
@@ -374,14 +383,14 @@
 
             </div>
 
-            <div class="grid md:grid-cols-3 gap-6 p-6">
-                <div class="md:col-span-2 flex items-center justify-center bg-gray-50 rounded-2xl p-4">
-                    <img id="modalImage" class="max-h-[65vh] rounded-xl object-contain shadow-lg">
+            <div class="grid md:grid-cols-3 gap-4 p-4">
+                <div class="md:col-span-2 flex items-center justify-center bg-gray-50 rounded-2xl p-2">
+                    <img id="modalImage" class="max-h-[50vh] rounded-xl object-contain shadow-lg">
                 </div>
 
                 <div>
-                    <p class="text-sm font-semibold mb-3 text-gray-500">Screenshots</p>
-                    <div id="thumbnailContainer" class="grid grid-cols-3 md:grid-cols-2 gap-3"></div>
+                    <p class="text-sm font-semibold mb-2 text-gray-500">Screenshots</p>
+                    <div id="thumbnailContainer" class="grid grid-cols-4 md:grid-cols-2 gap-2"></div>
                 </div>
             </div>
         </div>
