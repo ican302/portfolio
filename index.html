@@ -399,10 +399,12 @@
     </div>
 
     <script>
-        AOS.init({
-            easing: 'ease-out-back',
-            duration: 1000
-        });
+        if (window.innerWidth > 768) {
+            AOS.init({
+                easing: 'ease-out-back',
+                duration: 1000
+            });
+        }
 
         const projects = {
             foryou: { title: "For You", images: ["img/project-1.png", "img/project-1.1.png", "img/project-1.2.png"] },
